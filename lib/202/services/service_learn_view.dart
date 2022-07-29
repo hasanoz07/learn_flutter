@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:learn_flutter/services/comment_learn_view.dart';
-import 'package:learn_flutter/services/post_model.dart';
-import 'package:learn_flutter/services/post_service.dart';
+import 'package:learn_flutter/202/services/comment_learn_view.dart';
+import 'package:learn_flutter/202/services/post_model.dart';
+import 'package:learn_flutter/202/services/post_service.dart';
 
 class ServiceLearn extends StatefulWidget {
   const ServiceLearn({Key? key}) : super(key: key);

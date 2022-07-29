@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter/services/horoscope_model.dart';
-import 'package:learn_flutter/services/horoscope_service.dart';
+import 'package:learn_flutter/202/services/horoscope_model.dart';
+import 'package:learn_flutter/202/services/horoscope_service.dart';
+
 
 class HoroscopeServiceLearn extends StatefulWidget {
   HoroscopeServiceLearn({Key? key}) : super(key: key);

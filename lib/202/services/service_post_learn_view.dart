@@ -2,7 +2,8 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:learn_flutter/services/post_model.dart';
+import 'package:learn_flutter/202/services/post_model.dart';
+
 
 class ServicePostLearn extends StatefulWidget {
   const ServicePostLearn({Key? key}) : super(key: key);

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter/202/packages/launch_manager.dart';
 import 'package:learn_flutter/202/packages/loading_bar.dart';
-import 'package:url_launcher/url_launcher.dart';
+
 
 class PackageLearnView extends StatefulWidget {
   const PackageLearnView({Key? key}) : super(key: key);

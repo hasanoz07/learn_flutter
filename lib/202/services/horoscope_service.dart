@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-import 'package:learn_flutter/services/horoscope_model.dart';
+import 'package:learn_flutter/202/services/horoscope_model.dart';
 
 abstract class IHoroscopeService {
   Future<List<HoroscopeModel>?> fetchReletadHoroscopeDaily(String horoscope);

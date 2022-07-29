@@ -1,7 +1,8 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-import 'package:learn_flutter/services/comment_model.dart';
-import 'package:learn_flutter/services/post_model.dart';
+import 'package:learn_flutter/202/services/comment_model.dart';
+import 'package:learn_flutter/202/services/post_model.dart';
+
 
 abstract class IPostService {
   Future<List<PostModel>?> fetchPostItemsAdvance();

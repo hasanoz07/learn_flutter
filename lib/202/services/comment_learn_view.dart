@@ -1,6 +1,7 @@
+
 import 'package:flutter/material.dart';
-import 'package:learn_flutter/services/comment_model.dart';
-import 'package:learn_flutter/services/post_service.dart';
+import 'package:learn_flutter/202/services/comment_model.dart';
+import 'package:learn_flutter/202/services/post_service.dart';
 
 class CommentsLearn extends StatefulWidget {
   const CommentsLearn({Key? key, this.postId}) : super(key: key);
@@ -28,7 +29,8 @@ class _CommentsLearnState extends State<CommentsLearn> {
   }
 
   Future<void> fetchPostItemsWithId(int postId) async {
-    _commentModelItems = await postService.fetchReletadCommentWitgPostId(postId);
+    _commentModelItems =await postService.fetchReletadCommentWitgPostId(postId);
+     
     _changeLoading();
   }
 

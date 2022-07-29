@@ -16,7 +16,6 @@ class _OppLearnViewState extends State<OppLearnView> {
     super.initState();
     _fileDownload = FileDownload();
   }
-
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(actions: [Center(child: CircularProgressIndicator(color: Colors.red,),)],),
