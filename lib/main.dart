@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:learn_flutter/202/cache/shared_learn_cache.dart';
 
-import 'package:learn_flutter/202/oop_learn_view.dart';
-import 'package:learn_flutter/202/packages/theme/light_theme.dart';
+
+import 'package:learn_flutter/202/theme/light_theme.dart';
+import 'package:learn_flutter/202/theme_learn_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,13 +16,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: LightTheme().theme,
+      theme: LighTheme().theme,
       // ThemeData.dark().copyWith(
       //     tabBarTheme: TabBarTheme(
       //         labelColor: Colors.white, unselectedLabelColor: Colors.red, indicatorSize: TabBarIndicatorSize.label),
       //     inputDecorationTheme: InputDecorationTheme(
       //         filled: true,
-              
+
       //         iconColor: Colors.red,
       //         border: OutlineInputBorder(),
       //         labelStyle: TextStyle(color: Colors.lime)),
@@ -36,7 +38,7 @@ class MyApp extends StatelessWidget {
       //       systemOverlayStyle: SystemUiOverlayStyle.dark, //status bar durumunu belirler
       //       elevation: 0, //sayfanın kendisindenmiş gibi yapmak için appbarı
       //     )),
-      home: OppLearnView(),
+      home: SharedLearn(),
     );
   }
 }

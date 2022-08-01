@@ -30,6 +30,8 @@ dependencies:
   flutter_spinkit: ^5.1.0
   #google packages
   url_launcher: ^6.1.5
+  #cache
+  shared_preferences: ^2.0.15
 
 dev_dependencies:
   flutter_test:
