@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:learn_flutter/202/cache/shared_learn_cache.dart';
-
-
+import 'package:learn_flutter/202/cache/secure_context/secure_context_learn.dart';
 import 'package:learn_flutter/202/theme/light_theme.dart';
-import 'package:learn_flutter/202/theme_learn_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,7 +35,7 @@ class MyApp extends StatelessWidget {
       //       systemOverlayStyle: SystemUiOverlayStyle.dark, //status bar durumunu belirler
       //       elevation: 0, //sayfanın kendisindenmiş gibi yapmak için appbarı
       //     )),
-      home: SharedLearn(),
+      home: SecureContextLearnView(),
     );
   }
 }
