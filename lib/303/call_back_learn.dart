@@ -1,5 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+
 import 'package:learn_flutter/products/widget/button/answer_button.dart';
 import 'package:learn_flutter/products/widget/button/loading_button.dart';
 import 'package:learn_flutter/products/widget/callback_drodown.dart';
@@ -34,7 +35,7 @@ class _CallBackLearnState extends State<CallBackLearn> {
             LoadingButton(
               title: "LodingButton",
               callback: () async {
-              await Future.delayed(const Duration(seconds: 2));
+                await Future.delayed(const Duration(seconds: 2));
               },
             ),
           ],
@@ -58,13 +59,17 @@ class CallBackUser {
     ];
   }
 
-  @override
-  bool operator ==(covariant CallBackUser other) {
-    if (identical(this, other)) return true;
 
-    return other.name == name && other.id == id;
-  }
 
   @override
   int get hashCode => name.hashCode ^ id.hashCode;
+
+  @override
+  bool operator ==(covariant CallBackUser other) {
+    if (identical(this, other)) return true;
+  
+    return 
+      other.name == name &&
+      other.id == id;
+  }
 }

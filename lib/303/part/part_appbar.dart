@@ -18,8 +18,10 @@ class _PartOfAppbar extends StatelessWidget with PreferredSizeWidget {
       ],
     );
   }
-
-  @override
+  
+@override
  
   Size get preferredSize => Size.fromHeight(kToolbarHeight);
+
+  
 }

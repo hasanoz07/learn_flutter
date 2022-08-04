@@ -18,13 +18,12 @@ class _CallBackDropdownState extends State<CallBackDropdown> {
       widget.onUserSelected.call(_user!);
     }
   }
-
   @override
   Widget build(BuildContext context) {
     return DropdownButton<CallBackUser>(
         value: _user,
-        items: CallBackUser.dummyUsers().map((e) {
-          return DropdownMenuItem(child: Text(e.name), value: e);
+        items: CallBackUser.dummyUsers().map((element) {
+          return DropdownMenuItem(child: Text(element.name), value: element);
         }).toList(),
         onChanged: _updateUser);
   }
