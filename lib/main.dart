@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter/202/theme/light_theme.dart';
-import 'package:learn_flutter/303/call_back_learn.dart';
-import 'package:learn_flutter/303/tabbar_advance_learn.dart';
+
+import 'package:learn_flutter/303/reqrest_resource/view/req_res_view.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
       //       systemOverlayStyle: SystemUiOverlayStyle.dark, //status bar durumunu belirler
       //       elevation: 0, //sayfanın kendisindenmiş gibi yapmak için appbarı
       //     )),
-      home: TabAdvanceLearn(),
+      home: ReqResView(),
     );
  }
 }

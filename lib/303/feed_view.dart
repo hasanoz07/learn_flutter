@@ -10,7 +10,6 @@ class FeedView extends StatefulWidget {
 }
 
 class _FeedViewState extends State<FeedView> with AutomaticKeepAliveClientMixin {
-  @override
   final IPostService _postService = PostService();
   Widget build(BuildContext context) {
     super.build(context);

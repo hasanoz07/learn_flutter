@@ -33,6 +33,8 @@ dependencies:
   #cache
   shared_preferences: ^2.0.15
   flutter_secure_storage: ^5.0.2
+  #stateManagment
+  provider: ^6.0.3
 
 dev_dependencies:
   flutter_test:
