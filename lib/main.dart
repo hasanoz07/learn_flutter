@@ -2,11 +2,24 @@ import 'package:flutter/material.dart';
 import 'package:learn_flutter/202/theme/light_theme.dart';
 
 import 'package:learn_flutter/303/reqrest_resource/view/req_res_view.dart';
-
+import 'package:learn_flutter/products/global/resource_context.dart';
+import 'package:learn_flutter/products/global/theme_notifier.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MultiProvider(
+    providers: [
+      Provider(
+        create: (_) => ResourceContext(),
+      ),
+      ChangeNotifierProvider<ThemeNotifier>(
+        create: (context) => ThemeNotifier(),
+      )
+    ],
+    builder: (context, child) => MyApp(),
+  ));
 }
+
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
   @override
@@ -14,7 +27,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: LighTheme().theme,
+      theme: context.watch<ThemeNotifier>().currentTheme,
       // ThemeData.dark().copyWith(
       //     tabBarTheme: TabBarTheme(
       //         labelColor: Colors.white, unselectedLabelColor: Colors.red, indicatorSize: TabBarIndicatorSize.label),
@@ -38,5 +51,5 @@ class MyApp extends StatelessWidget {
       //     )),
       home: ReqResView(),
     );
- }
+  }
 }

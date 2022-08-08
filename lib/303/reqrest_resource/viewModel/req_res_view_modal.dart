@@ -1,5 +1,4 @@
-import 'package:dio/dio.dart';
-import 'package:flutter/material.dart';
+
 import 'package:learn_flutter/202/cache/shared_learn_cache.dart';
 import 'package:learn_flutter/303/reqrest_resource/model/resource_mdeol.dart';
 import 'package:learn_flutter/303/reqrest_resource/product/service/project_dio.dart';
@@ -20,4 +19,5 @@ Future<void> _fetch()async{
   resurces=(await reqresService.fetchResourceItem())?.data??[];
   changeLoading();
 }
+
 }

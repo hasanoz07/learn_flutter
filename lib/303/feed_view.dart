@@ -14,13 +14,16 @@ class _FeedViewState extends State<FeedView> with AutomaticKeepAliveClientMixin 
   Widget build(BuildContext context) {
     super.build(context);
     return Scaffold(
+      
       floatingActionButtonLocation: FloatingActionButtonLocation.centerTop,
       floatingActionButton: FloatingActionButton(child: Icon(Icons.refresh),
         onPressed: () {
           setState(() {});
         },
       ),
-      appBar: AppBar(),
+      appBar: AppBar(
+        
+      ),
       body: FutureBuilder<List<PostModel>?>(
         future: _postService.fetchPostItemsAdvance(),
         builder: (BuildContext context, AsyncSnapshot<List<PostModel>?> snapshot) {
