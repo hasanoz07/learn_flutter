@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:learn_flutter/products/global/resource_context.dart';
+import 'package:provider/provider.dart';
 
 class ImageLearn202 extends StatefulWidget {
   const ImageLearn202({Key? key}) : super(key: key);
@@ -11,7 +13,10 @@ class _ImageLearn202State extends State<ImageLearn202> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text(context.read<ResourceContext>().model?.data?.length.toString() ?? "sa"),
+        actions: [IconButton(onPressed: () {}, icon: Icon(Icons.remove))],
+      ),
       body: ImagePath.ic_software_factory.toWidget(),
     );
   }
